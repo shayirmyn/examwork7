@@ -50,6 +50,7 @@ body {
 .image {
   width: 170px;
   height: 120px;
+  margin: 5px 0 0 0;
 }
 
 .foodBlock {
@@ -64,11 +65,17 @@ body {
 }
 
 .list {
-
+  border: 1px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 4px;
+  background: #efefcd;
+  width: 360px;
 }
 
 .foodContainer {
-  margin: 60px 0 0 0;
+  margin: 60px 0 0 30px;
   width: 800px;
   display: flex;
   flex-wrap: wrap;
@@ -76,4 +83,25 @@ body {
 
 .orderContainer {
   margin: auto auto auto auto;
+}
+
+.totalPrice {
+  margin: 30px 0 20px 0;
+  display: inline-block;
+}
+
+.orderList {
+  padding: 20px 0 0 0;
+}
+
+.orderPrice {
+  margin: 0 0 0 8px;
+}
+
+.orderCount {
+  margin: 0 8px 0 0;
+}
+
+.btnDelete {
+  margin: 0 0 0 10px;
 }

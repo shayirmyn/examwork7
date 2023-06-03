@@ -48,10 +48,27 @@ const App = () => {
         setFoodsUseState((prevState) => {
             return prevState.map((thing, index) => {
                 if (thing.name === name) {
-                    setPriceCount((prevState) => prevState + FOODS[index].price);
+                    const total = priceCount + FOODS[index].price;
+                    setPriceCount(total);
                     return {
                         ...thing,
                         count: thing.count + 1,
+                    };
+                }
+                return thing;
+            });
+        });
+    };
+
+    const btnDelete = (name: string) => {
+        setFoodsUseState((prevState) => {
+            return prevState.map((thing, index) => {
+                if (thing.name === name) {
+                    const totalPrice = priceCount - (foodsUseState[index].count * FOODS[index].price)
+                    setPriceCount(totalPrice);
+                    return {
+                        ...thing,
+                        count: thing.count = 0,
                     };
                 }
                 return thing;
@@ -70,7 +87,7 @@ const App = () => {
         );
     });
 
-  return (
+    return (
       <div className="App">
           <div className="foodContainer">
               {showFood}
@@ -79,6 +96,7 @@ const App = () => {
               <Order price={priceCount}
                      countState={foodsUseState}
                      food={FOODS}
+                     delete={btnDelete}
               />
           </div>
       </div>
