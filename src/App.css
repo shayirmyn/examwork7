@@ -1,5 +1,10 @@
+body {
+  background: #cbcba5;
+}
+
 .App {
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
@@ -37,22 +42,38 @@
   }
 }
 
-.count {
-  margin: 0 20px 0 20px;
-}
-
 .name {
   font-weight: bold;
+  margin: 0 10px 0 0;
 }
 
 .image {
-  width: 120px;
+  width: 170px;
   height: 120px;
 }
 
 .foodBlock {
-  border: 1px solid;
-  margin: 5px 0 0 50px;
-  width: 400px;
+  border: 1px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  margin: 5px 0 0 20px;
+  width: 360px;
+  background: #efefcd;
   border-radius: 4px;
+}
+
+.list {
+
+}
+
+.foodContainer {
+  margin: 60px 0 0 0;
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.orderContainer {
+  margin: auto auto auto auto;
 }
