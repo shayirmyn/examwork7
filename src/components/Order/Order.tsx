@@ -20,13 +20,15 @@ interface IOrder {
 }
 
 const Order: React.FC<IOrder> = (props) => {
+
+  if (props.price === 0) {
+    return <h4 className="emptyOrder">Please order something..</h4>;
+  }
+
   return (
     <div className="list">
       <h3 className="orderList">Order list</h3>
       {props.countState.map((every, index) => {
-        if (props.price === 0) {
-          return <p>Please add something..</p>;
-        }
         for (let i = 0; i < every.count; i++) {
           const orderPrice = every.count * props.food[index].price;
           return (

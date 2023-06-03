@@ -105,3 +105,16 @@ body {
 .btnDelete {
   margin: 0 0 0 10px;
 }
+
+.emptyOrder {
+  border: 1px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 4px;
+  background: #efefcd;
+  width: 360px;
+  display: block;
+  height: 80px;
+  padding: 60px 0 0 0;
+}
