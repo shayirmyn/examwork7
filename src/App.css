@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.count {
+  margin: 0 20px 0 20px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.image {
+  width: 120px;
+  height: 120px;
+}
+
+.foodBlock {
+  border: 1px solid;
+  margin: 5px 0 0 50px;
+  width: 400px;
+  border-radius: 4px;
+}
